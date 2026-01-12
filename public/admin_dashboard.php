@@ -33,15 +33,24 @@ $stats['total_messages'] = $result->fetch_assoc()['total'];
 $result = $conn->query("SELECT COUNT(*) as total FROM messages WHERE DATE(timestamp) = CURDATE()");
 $stats['messages_today'] = $result->fetch_assoc()['total'];
 
-// Total feedback
-$result = $conn->query("SELECT COUNT(*) as total FROM feedback");
-$stats['total_feedback'] = $result->fetch_assoc()['total'];
+// Total feedback - check if table exists
+$table_check = $conn->query("SHOW TABLES LIKE 'feedback'");
+if ($table_check && $table_check->num_rows > 0) {
+    $result = $conn->query("SELECT COUNT(*) as total FROM feedback");
+    $stats['total_feedback'] = $result->fetch_assoc()['total'];
+} else {
+    $stats['total_feedback'] = 0;
+}
 
 // Recent users
 $recent_users = $conn->query("SELECT id, username, email, created_at, is_online FROM users WHERE role='user' ORDER BY created_at DESC LIMIT 5");
 
-// Recent feedback
-$recent_feedback = $conn->query("SELECT f.*, u.username FROM feedback f JOIN users u ON f.user_id=u.id ORDER BY f.created_at DESC LIMIT 5");
+// Recent feedback - check if table exists
+if ($table_check && $table_check->num_rows > 0) {
+    $recent_feedback = $conn->query("SELECT f.*, u.username FROM feedback f JOIN users u ON f.user_id=u.id ORDER BY f.created_at DESC LIMIT 5");
+} else {
+    $recent_feedback = $conn->query("SELECT NULL LIMIT 0"); // empty result
+}
 
 $pageTitle = "Dashboard";
 ?>
