@@ -1,0 +1,60 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+config/.env
+config/.env.example
+
+# Vendor directory
+vendor/
+composer.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+debug_*.html
+tes.php
+test_*.html
+
+# Backup files
+*_backup.php
+*.sql.backup
+
+# Excel reports
+*.xlsx
+*.xls
+
+# Tests temp
+tests/temp/

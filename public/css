@@ -1,0 +1,152 @@
+/* === GLOBAL STYLE === */
+body {
+    background-color: #f9fafb; /* Soft background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding-top: 32px;
+    color: #333;
+}
+
+/* === CONTAINER === */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* === CARD SECTION === */
+.form-section,
+.table-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-section:hover,
+.table-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === TITLE === */
+h2 {
+    margin-bottom: 20px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* === FORM ELEMENTS === */
+.form-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3b82f6;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+/* === BUTTON === */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* === TABLE === */
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-section th,
+.table-section td {
+    padding: 14px;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #1e293b;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.table-section tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table-section tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.table-section tr:hover {
+    background-color: #eef2ff;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 14px;
+    }
+}

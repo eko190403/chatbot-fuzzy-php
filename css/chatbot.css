@@ -1,0 +1,176 @@
+body {
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0; /* tanpa padding supaya full */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Kontainer chat full layar */
+.chat-container {
+    width: 100%;
+    height: 100vh; /* penuh vertikal */
+    max-width: 100%;
+    background: white;
+    border-radius: 0; /* dihilangkan biar bener-bener full */
+    box-shadow: none; /* tanpa bayangan di full screen */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Navbar chat */
+.chat-navbar {
+    background: #007bff;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Area pesan */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble {
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin: 8px 0;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background: #e9ecef;
+    align-self: flex-start;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bot-message img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Tombol feedback */
+.feedback-buttons {
+    margin-top: 6px;
+}
+
+.feedback-buttons button {
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+/* Input chat */
+.chat-input {
+    display: flex;
+    padding: 12px 15px;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 15px;
+}
+
+.chat-input button {
+    margin-left: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: #0062cc;
+}
+
+/* Pilihan kategori */
+.kategori-select {
+    padding: 12px 15px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.pertanyaan-terdaftar {
+    padding: 12px;
+    background: #f1f1f1;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.pertanyaan-item {
+    padding: 8px 14px;
+    background: white;
+    border-radius: 6px;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pertanyaan-item:hover {
+    background: #d6eaff;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        align-items: stretch;
+    }
+    .chat-container {
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .navbar-title {
+        font-size: 16px;
+    }
+    .chat-bubble {
+        font-size: 13px;
+        max-width: 90%;
+    }
+    .chat-input input {
+        font-size: 13px;
+    }
+    .chat-input button {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+}

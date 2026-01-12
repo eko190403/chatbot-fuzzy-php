@@ -1,0 +1,12 @@
+.env
+logs/
+uploads/*
+!uploads/.gitkeep
+vendor/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
