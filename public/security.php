@@ -75,7 +75,7 @@ function setSecurityHeaders() {
 
 // Rate Limiting (simple file-based)
 function checkRateLimit($identifier, $maxAttempts = 5, $timeWindow = 300) {
-    $rateDir = __DIR__ . '/logs/rate_limit';
+    $rateDir = __DIR__ . '/../logs/rate_limit';
     if (!is_dir($rateDir)) {
         @mkdir($rateDir, 0755, true);
     }

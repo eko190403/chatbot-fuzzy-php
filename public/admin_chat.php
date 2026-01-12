@@ -37,7 +37,7 @@ echo "-->\n";
 <meta charset="UTF-8" />
 <title>Admin Live Chat</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="css/admin_live_chat.css">
+<link rel="stylesheet" href="../css/admin_live_chat.css">
 <style>
 .notif-badge { background-color:red; color:white; font-size:12px; font-weight:bold; border-radius:50%; padding:2px 6px; margin-left:6px; display:inline-block; }
 .user-item.active { background-color:#e0e0e0; }
