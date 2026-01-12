@@ -7,7 +7,7 @@ if(!isset($_SESSION['user_id']) || $_SESSION['role']!=='admin') {
     exit('Unauthorized');
 }
 
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 
 if (!isset($_POST['user_id'])) {
     http_response_code(400);

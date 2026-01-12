@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 // Keep session alive
 $_SESSION['last_activity'] = time();
 
-include('db.php');
+include __DIR__ . '/../config/db.php';
 
 $admin_id = $_SESSION['user_id'];
 $admin_name = htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8');

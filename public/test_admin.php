@@ -13,7 +13,7 @@ print_r($_SESSION);
 echo "</pre>";
 
 if (isset($_SESSION['user_id'])) {
-    include 'db.php';
+    include __DIR__ . '/../config/db.php';
     
     echo "<h2>Database Check</h2>";
     $user_id = $_SESSION['user_id'];
@@ -60,7 +60,7 @@ if (isset($_SESSION['user_id'])) {
 }
 
 echo "<h2>WebSocket Config</h2>";
-require_once 'config.php';
+require_once __DIR__ . '/../config/config.php';
 echo "<pre>";
 echo "WS_HOST: " . WS_HOST . "\n";
 echo "WS_PORT: " . WS_PORT . "\n";

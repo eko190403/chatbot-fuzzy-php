@@ -2,7 +2,7 @@
 require_once 'session_init.php';
 session_start();
 
-include __DIR__ . "/db.php";
+include __DIR__ . "/../config/db.php";
 
 if (!isset($_SESSION['user_id']) || trim($_SESSION['role']) !== 'user') {
     header("Location: login.php");

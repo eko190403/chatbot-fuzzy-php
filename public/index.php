@@ -13,7 +13,7 @@ if (!isset($_SESSION['regenerated'])) {
     $_SESSION['regenerated'] = true;
 }
 
-require_once 'db.php';
+require_once __DIR__ . '/../config/db.php';
 
 $email = $_SESSION['email'];
 $stmt = $conn->prepare("SELECT id, username FROM users WHERE email = ?");

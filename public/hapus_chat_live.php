@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit("Not Authorized");
 }
 
-include __DIR__ . "/db.php"; 
+include __DIR__ . "/../config/db.php"; 
 
 $current_user_id = $_SESSION['user_id'];
 $is_admin = ($_SESSION['role'] === 'admin');

@@ -2,7 +2,7 @@
 require_once 'session_init.php';
 session_start(); // Start session untuk CSRF token
 
-require_once 'db.php'; // koneksi database
+require_once __DIR__ . '/../config/db.php'; // koneksi database
 $message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

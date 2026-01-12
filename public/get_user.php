@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include __DIR__ . '/../config/db.php';
 
 $admin_id = isset($_GET['admin_id']) ? (int)$_GET['admin_id'] : 0;
 if ($admin_id <= 0) {

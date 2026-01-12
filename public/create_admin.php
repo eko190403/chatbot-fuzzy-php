@@ -3,7 +3,7 @@
  * Script untuk membuat atau mengecek akun admin
  */
 
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 
 echo "<h1>Admin Account Manager</h1>";
 echo "<style>body{font-family:monospace;padding:20px;} .success{color:green;} .error{color:red;} table{border-collapse:collapse;margin:20px 0;} td,th{border:1px solid #ddd;padding:8px;}</style>";

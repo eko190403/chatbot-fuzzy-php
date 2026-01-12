@@ -2,7 +2,7 @@
 // Pastikan session sudah dimulai
 session_start();
 
-require 'db.php'; // Koneksi ke database
+require __DIR__ . '/../config/db.php'; // Koneksi ke database
 
 if (isset($_SESSION['user_id'])) {
     // Ambil user_id dari session

@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 
 // Pastikan parameter user_id dan admin_id ada
 if (isset($_GET['user_id']) && isset($_GET['admin_id'])) {

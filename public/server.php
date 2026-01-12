@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-require 'vendor/autoload.php';
-require_once __DIR__ . '/config.php';
+require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../config/config.php';
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;

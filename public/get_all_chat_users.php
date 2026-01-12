@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     exit;
 }
 
-include('db.php');
+include __DIR__ . '/../config/db.php';
 
 $admin_id = $_SESSION['user_id'];
 

@@ -5,7 +5,7 @@ if (!isset($_SESSION['email'])) {
     header("Location: login.php");
     exit();
 }
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 
 $email = $_SESSION['email'];
 $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");

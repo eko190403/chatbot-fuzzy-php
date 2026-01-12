@@ -7,7 +7,7 @@ if (!isset($_SESSION['email'])) {
     exit;
 }
 
-require_once 'db.php'; // Panggil koneksi database
+require_once __DIR__ . '/../config/db.php'; // Panggil koneksi database
 // Pastikan di db.php variabelnya $conn
 
 // Ambil user_id berdasarkan email login

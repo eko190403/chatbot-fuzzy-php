@@ -1,5 +1,5 @@
 <?php
-include "db.php"; // Pastikan file ini memiliki koneksi dengan variabel $conn
+include __DIR__ . "/../config/db.php"; // Pastikan file ini memiliki koneksi dengan variabel $conn
 
 $username = "adminbaru";
 $password = "admin123"; 

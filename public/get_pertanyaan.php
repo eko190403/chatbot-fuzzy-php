@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+require_once __DIR__ . '/../config/db.php';
 
 if (isset($_POST['kategori']) && $_POST['kategori'] !== '') {
     $kategori = sanitizeInput($_POST['kategori']);

@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 
 if (isset($_POST['id']) && isset($_POST['feedback'])) {
     $id = intval($_POST['id']);

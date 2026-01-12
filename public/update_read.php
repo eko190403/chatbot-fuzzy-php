@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 $admin_id = 4; // id admin
 $sender_id = $_POST['sender_id'] ?? 0;
 

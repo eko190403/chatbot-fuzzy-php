@@ -1,5 +1,5 @@
 <?php
-include "db.php"; // Pastikan koneksi database benar
+include __DIR__ . "/../config/db.php"; // Pastikan koneksi database benar
 
 $username = "adminbaru";
 $password = "admin123"; 

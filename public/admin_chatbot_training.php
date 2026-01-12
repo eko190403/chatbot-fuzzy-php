@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 
 // Keep session alive
 $_SESSION['last_activity'] = time();
-include 'db.php';
+include __DIR__ . '/../config/db.php';
 
 // Hapus pertanyaan dari riwayat jika diminta
 if (isset($_GET['hapus'])) {

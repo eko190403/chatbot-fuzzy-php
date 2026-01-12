@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'db.php'; // pakai koneksi dari db.php
+require_once __DIR__ . '/../config/db.php'; // pakai koneksi dari db.php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST['username'] ?? '');

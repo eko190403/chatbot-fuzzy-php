@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     exit();
 }
 
-require_once 'db.php';
+require_once __DIR__ . '/../config/db.php';
 $email = $_SESSION['email'];
 
 // Ambil user_id dengan prepared statement

@@ -6,7 +6,7 @@
 
 // Load config if not already loaded
 if (!defined('SESSION_LIFETIME')) {
-    require_once __DIR__ . '/config.php';
+    require_once __DIR__ . '/../config/config.php';
 }
 
 // Set session configuration (must be before session_start)

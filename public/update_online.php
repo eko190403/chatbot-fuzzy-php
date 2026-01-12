@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('db.php');
+include __DIR__ . '/../config/db.php';
 
 if (isset($_SESSION['user_id'])) {
     $user_id = (int)$_SESSION['user_id'];
