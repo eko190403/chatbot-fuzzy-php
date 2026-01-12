@@ -227,3 +227,15 @@ Untuk pertanyaan atau masalah, silakan hubungi developer atau buat issue di repo
 ## 📄 License
 
 Proyek ini untuk keperluan akademik/skripsi.
+
+
+---
+
+##  Author / Pengenal
+
+**Nama:** Eko Saputra
+**Program Studi:** S1 Teknik Informatika
+**Nomor Kontak:** 085769363379
+**GitHub:** [eko190403](https://github.com/eko190403)
+
+Proyek ini merupakan hasil pengembangan untuk keperluan skripsi/penelitian akademik.
