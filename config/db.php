@@ -5,7 +5,7 @@
  */
 
 require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/security.php';
+require_once __DIR__ . '/../public/security.php';
 
 // Create database connection
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
