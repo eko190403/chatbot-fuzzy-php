@@ -102,15 +102,15 @@ $online_users = $conn->query("SELECT COUNT(*) as total FROM users WHERE is_onlin
         }
         
         .sidebar .menu a:hover {
-            background: #f8f9fa;
-            border-left-color: #3498db;
+            background: #f5f5f5;
+            border-left-color: #5c6bc0;
             padding-left: 25px;
         }
         
         .sidebar .menu a.active {
-            background: #e3f2fd;
-            color: #2196f3;
-            border-left-color: #2196f3;
+            background: #eceff1;
+            color: #5c6bc0;
+            border-left-color: #5c6bc0;
             font-weight: 600;
         }
         
@@ -239,8 +239,8 @@ $online_users = $conn->query("SELECT COUNT(*) as total FROM users WHERE is_onlin
             font-size: 20px;
         }
         
-        .mini-stat-icon.blue { background: #e3f2fd; color: #2196f3; }
-        .mini-stat-icon.green { background: #e8f5e9; color: #4caf50; }
+        .mini-stat-icon.blue { background: #e8eaf6; color: #5c6bc0; }
+        .mini-stat-icon.green { background: #eceff1; color: #607d8b; }
         
         .mini-stat-info h3 {
             font-size: 24px;
@@ -318,12 +318,12 @@ $online_users = $conn->query("SELECT COUNT(*) as total FROM users WHERE is_onlin
         }
         
         .btn-primary {
-            background: #3498db;
+            background: #5c6bc0;
             color: white;
         }
         
         .btn-primary:hover {
-            background: #2980b9;
+            background: #4e5ba6;
         }
         
         .btn-secondary {
@@ -417,23 +417,23 @@ $online_users = $conn->query("SELECT COUNT(*) as total FROM users WHERE is_onlin
         }
         
         .badge.online {
-            background: #e8f5e9;
-            color: #4caf50;
+            background: #e8f4f8;
+            color: #546e7a;
         }
         
         .badge.offline {
-            background: #ecf0f1;
-            color: #95a5a6;
+            background: #f5f5f5;
+            color: #9e9e9e;
         }
         
         .badge.admin {
-            background: #fff3e0;
-            color: #ff9800;
+            background: #ede7f6;
+            color: #7e57c2;
         }
         
         .badge.user {
-            background: #e3f2fd;
-            color: #2196f3;
+            background: #eceff1;
+            color: #607d8b;
         }
         
         .empty-state {

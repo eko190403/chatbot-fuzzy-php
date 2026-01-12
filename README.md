@@ -1,8 +1,62 @@
-# Chat System - AkademikaBot
+# AkademikaBot - Chatbot Fuzzy Logic PHP
 
-Sistem chat real-time dengan chatbot AI menggunakan PHP, WebSocket (Ratchet), dan Python Flask.
+Sistem chatbot berbasis Fuzzy Logic untuk menjawab pertanyaan seputar akademik dengan fitur live chat real-time.
+
+## 👨‍💻 Developer
+
+**Eko Saputra, S.Kom**  
+- 📚 Pendidikan: S1 Teknik Informatika  
+- 📱 WhatsApp: **085769363379**  
+- 💼 Spesialisasi: Fuzzy Logic, Web Development, Real-time Chat Systems  
+- 🌐 **Jasa Pembuatan Website Profesional** - Terima project web development, aplikasi chatbot, sistem informasi, dan solusi IT lainnya. Hubungi via WhatsApp untuk konsultasi gratis!
+
+---
+
+## 📸 Preview Tampilan Website
+
+### 🔐 Halaman Login
+Interface login yang clean dan modern dengan validasi form real-time.
+
+![Login Page](screenshots/login.png)
+
+### 💬 Chatbot Interface (User)
+Antarmuka chat yang intuitif dan responsif dengan fitur:
+- Fuzzy Logic matching untuk jawaban akurat
+- Feedback system (👍/👎) untuk setiap jawaban
+- Kategori pertanyaan terorganisir
+- Real-time response
+
+![Chatbot User](screenshots/chatbot-user.png)
+
+### 👥 Admin Live Chat
+Dashboard admin untuk komunikasi langsung dengan user:
+- Daftar user aktif dengan status online/offline real-time
+- Interface chat WhatsApp-style yang familiar
+- Notifikasi pesan baru instant
+- Multi-user chat management
+
+![Admin Live Chat](screenshots/admin-live-chat.png)
+
+### 📊 Admin Dashboard
+Dashboard statistik lengkap dengan design profesional:
+- Overview real-time: Total Pengguna, Pengguna Online, Pertanyaan Chatbot, Total Pesan
+- Panel pengguna terbaru dengan avatar dan status
+- Panel feedback terbaru dari user dengan rating
+- Warna netral yang profesional dan modern
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+---
 
 ## 🔒 Perbaikan Keamanan (Security Updates)
+- Overview statistik sistem (Total Pengguna, Pengguna Online, Pertanyaan Chatbot, Total Pesan)
+- Panel pengguna terbaru dengan status
+- Panel feedback terbaru dari user
+- Design profesional dengan warna netral
+
+---
+
+## �🔒 Perbaikan Keamanan (Security Updates)
 
 Proyek ini telah diperbaiki dengan berbagai peningkatan keamanan:
 
@@ -118,8 +172,29 @@ python app.py
 
 ### 4. Akses Aplikasi
 
-- User: `http://localhost/chat_sistem/`
-- Admin: `http://localhost/chat_sistem/admin_dashboard.php`
+- **User Interface**: `http://localhost/chat_sistem/public/index.php`
+- **Admin Dashboard**: `http://localhost/chat_sistem/public/dashboard_home.php`
+- **Admin Live Chat**: `http://localhost/chat_sistem/public/admin_chat.php`
+- **Login Page**: `http://localhost/chat_sistem/public/login.php`
+
+## 🎨 Fitur Utama
+
+### Untuk User:
+- ✅ Chatbot AI dengan Fuzzy Logic matching
+- ✅ Kategori pertanyaan terorganisir
+- ✅ Feedback system (👍/👎)
+- ✅ Live chat dengan admin
+- ✅ Interface responsif dan modern
+
+### Untuk Admin:
+- ✅ Dashboard dengan statistik real-time
+- ✅ Live chat dengan semua user
+- ✅ Manajemen pertanyaan chatbot (CRUD)
+- ✅ Lihat feedback pengguna
+- ✅ Statistik penggunaan sistem
+- ✅ Manajemen user dan admin
+- ✅ Training chatbot
+- ✅ Design profesional dengan warna netral
 
 ## 👥 Default Admin Account
 
@@ -219,23 +294,35 @@ chmod -R 755 uploads/
 - ✅ XSS protection
 - ✅ Prepared statements untuk semua query
 - ✅ Session security improvements
+- ✅ UI Admin redesign dengan warna profesional
+- ✅ Reorganisasi struktur folder (public/, config/, app/)
 
-## 📞 Support
+## 📧 Kontak Developer & Jasa Pembuatan Website
 
-Untuk pertanyaan atau masalah, silakan hubungi developer atau buat issue di repository.
+**Eko Saputra, S.Kom**  
+📱 WhatsApp: **085769363379**  
+📚 Pendidikan: S1 Teknik Informatika  
+💻 Expertise: PHP, Python, MySQL, JavaScript, Fuzzy Logic, Real-time Systems
 
-## 📄 License
+### 🌐 Layanan Jasa Pembuatan Website Profesional
 
-Proyek ini untuk keperluan akademik/skripsi.
+Saya menerima project pembuatan website dan aplikasi web dengan kualitas terbaik:
 
+✅ **Website Company Profile** - Tampilan modern dan responsif  
+✅ **Sistem Informasi** - Akademik, inventory, HR, dll  
+✅ **E-Commerce / Toko Online** - Keranjang, payment gateway, dll  
+✅ **Chatbot & AI Integration** - Fuzzy Logic, Machine Learning  
+✅ **Real-time Chat System** - WebSocket, live messaging  
+✅ **API Development** - RESTful API, integrations  
+✅ **Web Application** - Custom sesuai kebutuhan bisnis Anda  
+
+📞 **Konsultasi GRATIS** - Hubungi via WhatsApp untuk diskusi project Anda!
 
 ---
 
-##  Author / Pengenal
+## 📄 License
 
-**Nama:** Eko Saputra
-**Program Studi:** S1 Teknik Informatika
-**Nomor Kontak:** 085769363379
-**GitHub:** [eko190403](https://github.com/eko190403)
+Copyright © 2026 Eko Saputra, S.Kom - S1 Teknik Informatika  
+All rights reserved.
 
-Proyek ini merupakan hasil pengembangan untuk keperluan skripsi/penelitian akademik.
+Project ini dibuat untuk keperluan akademik dan portfolio profesional.

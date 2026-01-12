@@ -119,15 +119,15 @@ $pageTitle = "Dashboard";
         }
         
         .sidebar .menu a:hover {
-            background: #f8f9fa;
-            border-left-color: #3498db;
+            background: #f5f5f5;
+            border-left-color: #5c6bc0;
             padding-left: 25px;
         }
         
         .sidebar .menu a.active {
-            background: #e3f2fd;
-            color: #2196f3;
-            border-left-color: #2196f3;
+            background: #eceff1;
+            color: #5c6bc0;
+            border-left-color: #5c6bc0;
             font-weight: 600;
         }
         
@@ -137,8 +137,8 @@ $pageTitle = "Dashboard";
         }
         
         .sidebar .menu a.logout:hover {
-            background: #ffebee;
-            border-left-color: #e74c3c;
+            background: #fafafa;
+            border-left-color: #e57373;
         }
         
         /* Topbar Styles */
@@ -261,12 +261,12 @@ $pageTitle = "Dashboard";
             margin-bottom: 15px;
         }
         
-        .stat-icon.blue { background: #e3f2fd; color: #2196f3; }
-        .stat-icon.green { background: #e8f5e9; color: #4caf50; }
-        .stat-icon.orange { background: #fff3e0; color: #ff9800; }
-        .stat-icon.purple { background: #f3e5f5; color: #9c27b0; }
-        .stat-icon.red { background: #ffebee; color: #f44336; }
-        .stat-icon.teal { background: #e0f2f1; color: #009688; }
+        .stat-icon.blue { background: #eceff1 !important; color: #607d8b !important; }
+        .stat-icon.green { background: #eceff1 !important; color: #607d8b !important; }
+        .stat-icon.orange { background: #f5f5f5 !important; color: #78909c !important; }
+        .stat-icon.purple { background: #ede7f6 !important; color: #7e57c2 !important; }
+        .stat-icon.red { background: #fafafa !important; color: #9e9e9e !important; }
+        .stat-icon.teal { background: #e0f2f1 !important; color: #546e7a !important; }
         
         .stat-value {
             font-size: 32px;
@@ -363,18 +363,18 @@ $pageTitle = "Dashboard";
         }
         
         .user-status.online {
-            background: #e8f5e9;
-            color: #4caf50;
+            background: #eceff1 !important;
+            color: #607d8b !important;
         }
         
         .user-status.offline {
-            background: #ecf0f1;
-            color: #95a5a6;
+            background: #f5f5f5 !important;
+            color: #bdbdbd !important;
         }
         
         .feedback-rating {
             font-size: 18px;
-            color: #ffc107;
+            color: #9e9e9e !important;
             margin-right: 15px;
         }
         
